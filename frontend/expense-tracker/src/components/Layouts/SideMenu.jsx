@@ -1,8 +1,10 @@
 import React, { useContext } from "react";
-import { SIDE_MENU_DATA } from "../../../../../../Demo/frontend/expense-tracker/src/utils/data";
+
 import { useNavigate } from "react-router-dom";
-import { UserContext } from "../../../../../../Demo/frontend/expense-tracker/src/context/UserContext";
-import CharAvatar from "../../../../../../Demo/frontend/expense-tracker/src/components/Cards/CharAvatar";
+
+import CharAvatar from "../Cards/CharAvatar";
+import { UserContext } from "../../context/UserContext";
+import { SIDE_MENU_DATA } from "../../utils/data";
 
 const SideMenu = ({ activeMenu }) => {
   const { user, clearUser } = useContext(UserContext);
