@@ -5,7 +5,7 @@ import { LuHandCoins, LuWalletMinimal } from "react-icons/lu";
 import { IoMdCard } from "react-icons/io";
 
 import { useNavigate } from "react-router-dom";
-import InfoCard from "../../components/cards/InfoCard";
+
 import { useUserAuth } from "../../hooks/useUserAuth";
 import axiosInstance from "../../utils/axiosInstance";
 import { API_PATHS } from "../../utils/apiPaths";
@@ -17,6 +17,7 @@ import Last30DaysExpenses from "../../components/Dashboard/Last30DaysExpenses";
 import RecentIncome from "../../components/Dashboard/RecentIncome";
 import RecentIncomeWithChart from "../../components/Dashboard/RecentIncomeWithChart";
 import DashboardLayout from "../../components/Layouts/DashboardLayout.jsx";
+import InfoCard from "../../components/Cards/InfoCard.jsx";
 
 const Home = () => {
   useUserAuth();
@@ -70,7 +71,7 @@ const Home = () => {
             color="bg-orange-500"
           />
 
-          <InfoCard
+          <InfoC
             icon={<LuHandCoins />}
             label="Total Expenses"
             value={addThousandsSeparator(dashboardData?.totalExpenses || 0)}
@@ -100,7 +101,9 @@ const Home = () => {
           />
 
           <RecentIncomeWithChart
-            data={dashboardData?.last60DaysIncome?.transactions?.slice(0,4) || []}
+            data={
+              dashboardData?.last60DaysIncome?.transactions?.slice(0, 4) || []
+            }
             totalIncome={dashboardData?.totalIncome || 0}
           />
 
