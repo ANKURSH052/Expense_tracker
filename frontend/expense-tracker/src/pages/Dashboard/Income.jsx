@@ -12,7 +12,7 @@ import Modal from "../../components/Modal";
 import AddIncomeForm from "../../components/Income/AddIncomeForm";
 import toast from "react-hot-toast";
 import DeleteAlert from "../../components/DeleteAlert";
-import DashboardLayout from "../../components/Layouts/DashboardLayout";
+import DashboardLayout from "../../components/Layouts/DashboardLayout.jsx";
 
 const Income = () => {
   useUserAuth();
