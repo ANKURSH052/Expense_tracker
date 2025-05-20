@@ -3,6 +3,7 @@ import React from "react";
 import { LuArrowRight } from "react-icons/lu";
 import TransactionInfoCard from "../cards/TransactionInfoCard";
 
+
 const ExpenseTransactions = ({transactions, onSeeMore}) => {
   return (
     <div className="card">
