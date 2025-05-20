@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import DashboardLayout from "../../components/Layouts/DashboardLayout";
+
 
 import { LuHandCoins, LuWalletMinimal } from "react-icons/lu";
 import { IoMdCard } from "react-icons/io";
@@ -16,6 +16,7 @@ import ExpenseTransactions from "../../components/Dashboard/ExpenseTransactions"
 import Last30DaysExpenses from "../../components/Dashboard/Last30DaysExpenses";
 import RecentIncome from "../../components/Dashboard/RecentIncome";
 import RecentIncomeWithChart from "../../components/Dashboard/RecentIncomeWithChart";
+import DashboardLayout from "../../components/Layouts/DashboardLayout";
 
 const Home = () => {
   useUserAuth();
@@ -109,7 +110,7 @@ const Home = () => {
           />
         </div>
       </div>
-    </DashboardLayout>
+    </DashboardLay>
   );
 };
 
