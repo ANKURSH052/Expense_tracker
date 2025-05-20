@@ -14,6 +14,7 @@ import Modal from "../../components/Modal";
 import toast from "react-hot-toast";
 import DashboardLayout from "../../components/Layouts/DashboardLayout";
 
+
 const Expense = () => {
   useUserAuth();
 
@@ -174,7 +175,7 @@ const Expense = () => {
           </Modal>
         </div>
       </div>
-    </DashboardLayout>
+    </DashboardLayou>
   );
 };
 
