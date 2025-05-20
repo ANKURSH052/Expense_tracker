@@ -110,7 +110,7 @@ const Home = () => {
           />
         </div>
       </div>
-    </DashboardLay>
+    </DashboardLayout>
   );
 };
 
