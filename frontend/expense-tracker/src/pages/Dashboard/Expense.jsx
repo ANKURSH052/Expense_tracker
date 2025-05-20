@@ -12,7 +12,7 @@ import AddExpenseForm from "../../components/Expense/AddExpenseForm";
 import DeleteAlert from "../../components/DeleteAlert";
 import Modal from "../../components/Modal";
 import toast from "react-hot-toast";
-import DashboardLayout from "../../components/Layouts/DashboardLayout";
+import DashboardLayout from "../../components/Layouts/DashboardLayout.jsx";
 
 
 const Expense = () => {
