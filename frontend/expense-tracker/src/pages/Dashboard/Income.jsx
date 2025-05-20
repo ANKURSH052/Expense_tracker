@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import DashboardLayout from "../../components/Layouts/DashboardLayout";
+
 
 import { useNavigate } from "react-router-dom";
 import { useUserAuth } from "../../hooks/useUserAuth";
@@ -12,6 +12,7 @@ import Modal from "../../components/Modal";
 import AddIncomeForm from "../../components/Income/AddIncomeForm";
 import toast from "react-hot-toast";
 import DeleteAlert from "../../components/DeleteAlert";
+import DashboardLayout from "../../components/Layouts/DashboardLayout";
 
 const Income = () => {
   useUserAuth();
