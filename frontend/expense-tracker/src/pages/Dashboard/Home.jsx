@@ -16,7 +16,7 @@ import ExpenseTransactions from "../../components/Dashboard/ExpenseTransactions"
 import Last30DaysExpenses from "../../components/Dashboard/Last30DaysExpenses";
 import RecentIncome from "../../components/Dashboard/RecentIncome";
 import RecentIncomeWithChart from "../../components/Dashboard/RecentIncomeWithChart";
-import DashboardLayout from "../../components/Layouts/DashboardLayout";
+import DashboardLayout from "../../components/Layouts/DashboardLayout.jsx";
 
 const Home = () => {
   useUserAuth();
