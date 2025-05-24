@@ -34,16 +34,6 @@ app.use("/api/v1/dashboard", dashboardRoutes);
 // Serve static uploads folder
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
-// ➕ Serve React frontend in production
-if (process.env.NODE_ENV === "production") {
-  const buildPath = path.join(__dirname, "client", "build");
-  app.use(express.static(buildPath));
-
-  app.get("*", (req, res) => {
-    res.sendFile(path.resolve(buildPath, "index.html"));
-  });
-}
-
 // Start server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
